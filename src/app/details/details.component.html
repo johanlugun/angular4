@@ -1,0 +1,11 @@
+<div class="detail_section">
+  <ng-container *ngFor="let user of userData.data">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image" [ngStyle]="{'background-image': 'url('+user.avatar+')', 'background-size' : 'cover'}"></div>
+        <mat-card-title>{{user.first_name}} {{user.last_name}}</mat-card-title>
+        <mat-card-subtitle>{{user.email}}</mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+  </ng-container>
+</div>
